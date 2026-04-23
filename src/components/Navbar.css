@@ -20,7 +20,7 @@
   color: rgba(255,255,255,0.9);
   text-align: center;
   padding: 8px 16px;
-  font-size: 15px;
+  font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-family: var(--font-body);
@@ -53,7 +53,7 @@
 
 .brand-sub {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--sage-mid);
@@ -68,7 +68,7 @@
 
 .nav-link {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 12px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-mid);
@@ -173,7 +173,7 @@ button.nav-link {
   background: none;
   cursor: pointer;
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 12px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }

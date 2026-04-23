@@ -27,7 +27,7 @@ function Navbar() {
       <div className="navbar-inner">
         {/* Announcement bar */}
         <div className="announcement-bar">
-          <span>AI Engineer · UI/UX Enthusiast · Mahindra University</span>
+          <span>AI Engineer · Mahindra University</span>
         </div>
 
         {/* Main nav row */}

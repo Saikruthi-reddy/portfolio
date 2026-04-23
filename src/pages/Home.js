@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Home.css';
+import myPhoto from './myphoto.png';
 
 function Home() {
   const skills = ['Python', 'Java', 'C', 'MySQL', 'React', 'HTML/CSS', 'JavaScript',  'NLP'];
@@ -37,7 +38,7 @@ function Home() {
           </div>
           <div className="hero-card">
             <div className="profile-avatar">
-  <img src={process.env.PUBLIC_URL + '/profile.jpg'} alt="Saikruthi" />
+  <img src={myPhoto} alt="Saikruthi" />
 </div>
             <div className="hero-card-info">
               <div className="info-chip"> Hyderabad, India</div>

@@ -1,0 +1,161 @@
+/* ===== HERO ===== */
+.resume-hero {
+  background: var(--cream);
+  padding: 80px 0 60px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e8e4df;
+}
+
+/* Decorative dots & circle matching the reference */
+.rh-deco {
+  position: absolute;
+  pointer-events: none;
+}
+
+.rh-deco--dot-filled {
+  display: none;
+}
+
+.rh-deco--circle {
+  display: none;
+}
+
+/* Label row */
+.rh-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.rh-line {
+  display: block;
+  width: 60px;
+  height: 1.5px;
+  background: #d94f1e;
+}
+
+.rh-label-text {
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+/* Big title */
+.rh-title {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--text-dark);
+  margin-bottom: 40px;
+  letter-spacing: -0.01em;
+}
+
+.rh-dot {
+  color: #d94f1e;
+}
+
+.rh-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ===== PDF VIEWER ===== */
+.resume-viewer-section {
+  background: var(--cream);
+  padding: 60px 0 80px;
+}
+
+/* The "browser window" container */
+.pdf-window {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+  border: 1px solid #2a2a2a;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Fake browser top bar */
+.pdf-window-bar {
+  background: #1e1e1e;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pdf-dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.pdf-dot--orange { background: #d94f1e; }
+.pdf-dot--grey   { background: #3a3a3a; }
+
+.pdf-filename {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  margin-left: 10px;
+  letter-spacing: 0.05em;
+}
+
+/* Embed area */
+.pdf-embed-wrap {
+  width: 100%;
+  height: 90vh;
+  min-height: 700px;
+  background: #fff;
+}
+
+.pdf-object,
+.pdf-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Fallback */
+.pdf-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  gap: 20px;
+  color: var(--text-mid);
+  font-size: 14px;
+}
+
+/* Note below viewer */
+.pdf-note {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--text-light);
+  font-family: var(--font-body);
+}
+
+.pdf-note code {
+  background: var(--sage-mist);
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-size: 11px;
+  color: var(--sage-dark);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+  .rh-title { font-size: clamp(3rem, 16vw, 5rem); }
+  .pdf-embed-wrap { height: 80vh; min-height: 500px; }
+  .rh-actions { flex-direction: column; }
+}
